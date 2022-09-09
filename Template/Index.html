@@ -1,0 +1,28 @@
+<!doctype html>
+<head>
+    {% block title %}
+        <title>Family Information</title>
+    {% endblock title %}
+</head>
+<body>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <i>The Options are:</i>
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+          <a class="nav-link"  href="{% url 'Menu' %}">Menu</a>
+<!--              <h1>This is Menu Page</h1>-->
+
+        </li>
+
+          <li class="nav-item active">
+          <a class="nav-link"  href="{% url 'FamilyApp' %}">FamilyApp</a>
+<!--              <h1><b>Punnam</b></h1>-->
+        </li>
+      </ul>
+    </div>
+</body>
+</html>
+
+{% block content %}
+<h1> This is Menu</h1>
+{% endblock content %}

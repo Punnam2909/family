@@ -1,0 +1,36 @@
+% extends "index.html" %}
+
+
+
+
+
+{% block content %}
+    {% block title %}
+        <title>Family Memebrs</title>
+    {% endblock title %}
+{% endblock content %}
+<body>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <i>The Options are:</i>
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+          <a class="nav-link"  href="{% url 'Punnam' %}">Punnam</a>
+        </li>
+
+                    <li class="nav-item active">
+          <a class="nav-link"  href="{% url 'Ramala' %}">Ramala</a>
+<!--              <h1><b>Punnam</b></h1>-->
+        </li>
+
+      </ul>
+    </div>
+</body>
+
+{% block content %}
+              {%for name in names %}
+
+                <h1>{{Punnam.Name}}</h1>
+              {% endfor %}
+
+{% endblock content %}
+
